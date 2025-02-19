@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles (optional) */
+:root {
+  --brown: #8B4513;
+}
+
+body {
+  @apply bg-gray-100 text-gray-900 font-sans flex justify-center items-center h-screen;
+}
+/* Custom Scrollbar (Sleek & Minimal) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Make scrollbar thinner */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* No background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #92400ea3; /* Semi-transparent brown */
+  border-radius: 10px;
+  border: none; /* Remove thick border for a sleek look */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #92400e; /* Darker brown on hover */
+}
+
